@@ -5,7 +5,7 @@ export default function Welcome() {
       id="home"
     >
       <div className="flex h-screen flex-col justify-center items-center">
-        <h1 className="text-black text-4xl tracking-tight">
+        <h1 className="text-black text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-tight text-center">
           Hi! ;) &#128075;<br></br> My name is
           <span className="text-red font-semibold"> Kostiantyn</span>
           <span className="text-blue font-semibold"> Shyrolapov</span>
