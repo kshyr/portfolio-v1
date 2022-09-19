@@ -8,7 +8,7 @@ module.exports = {
     colors: {
       'black': '#242331',
       'wheat': '#e0cfa3', 
-      'l-wheat': '#f0e7d1',
+      'l-wheat': '#f5efe0',
       'blue': '#759fbc',
       'red': '#9e2a2b',
     }

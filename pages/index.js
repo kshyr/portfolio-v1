@@ -5,14 +5,14 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className="flex">
+    <div className="">
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="Frontend developer portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex-1 ml-44">
+      <main>
         <Welcome />
         <Projects />
       </main>
