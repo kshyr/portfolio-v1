@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .component-block {
+    @apply h-screen bg-l-wheat ml-24 sm:ml-32 md:ml-44 lg:ml-60 xl:ml-80;
+  }
+  .project-block {
+    @apply bg-black border h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[420px] xl:w-96 transform duration-150 hover:scale-110;
+  }
+  .navbar-links {
+    @apply cursor-pointer transform duration-150 hover:scale-[1.15];
+  }
+  .text-reg {
+    @apply text-black text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-tight;
+  }
+  .text-name {
+    @apply text-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
 html,
 body {

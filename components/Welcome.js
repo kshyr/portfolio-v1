@@ -1,15 +1,19 @@
 export default function Welcome() {
   return (
-    <div
-      className="h-screen bg-l-wheat ml-24 sm:ml-32 md:ml-44 lg:ml-60 xl:ml-80"
-      id="home"
-    >
+    <div className="component-block" id="home">
       <div className="flex h-screen flex-col justify-center items-center">
-        <h1 className="text-black text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-tight text-center">
-          Hi! ;) &#128075;<br></br> My name is
-          <span className="text-red font-semibold"> Kostiantyn</span>
-          <span className="text-blue font-semibold"> Shyrolapov</span>
-        </h1>
+        <div className="flex justify-center items-center text-reg">
+          <h1 className="text-reg text-center">Hi!</h1>
+          <span className="animate-wiggle">&#128075;</span>
+        </div>
+        <br></br> <span className="text-reg">My name is</span>
+        <br></br>
+        <div className="inline-block">
+          <span className="text-red text-name font-semibold hover:rotate-12">
+            Kostiantyn
+          </span>
+          <span className="text-blue text-name font-semibold"> Shyrolapov</span>
+        </div>
       </div>
     </div>
   );
