@@ -10,7 +10,7 @@
     @apply bg-black border h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[420px] xl:w-96 transform duration-150 hover:scale-110;
   }
   .navbar-links {
-    @apply cursor-pointer transform duration-150 hover:scale-[1.15];
+    @apply cursor-pointer transform duration-150 hover:scale-[1.15] cursor-none;
   }
   .text-reg {
     @apply text-black text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-tight;
@@ -20,10 +20,11 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap");
 html,
 body {
+  cursor: none;
   padding: 0;
   margin: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
