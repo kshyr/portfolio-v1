@@ -13,7 +13,6 @@ export default function Home() {
   const [cursorBorderColor, setCursotBorderColor] = useState("36, 35, 49");
   const rgbCursorBorder = cursorBorderColor.split(", ");
 
-  const navRef = useRef();
   return (
     <div className="">
       <Head>
@@ -38,11 +37,11 @@ export default function Home() {
       <Navbar
         setCursorColor={setCursorColor}
         setCursotBorderColor={setCursotBorderColor}
-        ref={navRef}
       />
       <main>
         <Welcome />
-        <Projects />
+        <Projects setCursorColor={setCursorColor}
+        setCursotBorderColor={setCursotBorderColor}/>
       </main>
     </div>
   );
