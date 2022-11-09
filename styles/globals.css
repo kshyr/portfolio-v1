@@ -7,7 +7,7 @@
     @apply h-screen bg-l-wheat ml-24 sm:ml-32 md:ml-44 lg:ml-60 xl:ml-80;
   }
   .project-block {
-    @apply bg-black border h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[420px] xl:w-96 transform duration-150 hover:scale-110;
+    @apply bg-black border h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[350px] xl:w-[270px] transform duration-150 hover:scale-110;
   }
   .navbar-links {
     @apply cursor-pointer transform duration-150 hover:scale-[1.15] cursor-none;
@@ -18,6 +18,12 @@
   .text-name {
     @apply text-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight;
   }
+  .emgrad {
+    @apply bg-gradient-to-r from-[#FFB800] to-[#FF8C00];
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap");
@@ -27,4 +33,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Source Code Pro", monospace;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
