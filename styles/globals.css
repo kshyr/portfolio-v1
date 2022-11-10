@@ -7,10 +7,14 @@
     @apply h-screen bg-l-wheat ml-24 sm:ml-32 md:ml-44 lg:ml-60 xl:ml-80;
   }
   .project-block {
-    @apply bg-black border h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[350px] xl:w-[270px] transform duration-150 hover:scale-110;
+    @apply bg-black h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[350px]
+    xl:w-[270px] transform duration-150 hover:scale-110;
   }
   .navbar-links {
-    @apply cursor-pointer transform duration-150 hover:scale-[1.15] cursor-none;
+    @apply transform duration-150 hover:scale-[1.15];
+  }
+  .text-alt {
+    @apply text-black text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-tight;
   }
   .text-reg {
     @apply text-black text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-tight;
@@ -23,6 +27,15 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .shine-wrapper {
+    @apply before:absolute before:h-full before:bg-l-wheat before:animate-shine before:animation-delay-1 overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .animation-delay-1 {
+    animation-delay: 1s;
   }
 }
 
@@ -37,4 +50,8 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
 }

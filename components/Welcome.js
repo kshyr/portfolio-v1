@@ -2,13 +2,12 @@ export default function Welcome() {
   return (
     <div className="component-block" id="home">
       <div className="flex h-screen flex-col justify-center items-center">
-        <div className="flex justify-center items-center text-reg">
-          <h1 className="text-reg text-center">Hi!</h1>
-          <span className="animate-wiggle">&#128075;</span>
-        </div>
-        <br></br> <span className="text-reg">My name is</span>
+        <h3 className="text-reg">Hi!</h3>
         <br></br>
-        <div className="inline-block">
+        <span className="text-reg mb-2 md:mb-3 lg:mb-4 xl:mb-6">
+          My name is
+        </span>
+        <div className="inline-block relative lg:h-12 xl:h-14 shine-wrapper">
           <span className=" bg-gradient-to-r from-blue to-[#2b5665] text-transparent bg-clip-text text-name font-semibold">
             Kostiantyn&nbsp;
           </span>
@@ -16,13 +15,14 @@ export default function Welcome() {
             Shyrolapov
           </span>
         </div>
-        <div className="w-48 border-t-2 border-spacing-x-56 border-black mt-10 opacity-75"></div>
-        <div className="mt-10 mb-5 ml-32 mr-32 text-center">
-          <h3 class="relative text-3xl opacity-75 inline">
-            frontend engineer that builds web applications with
+        <div className="w-32 md:w-36 lg:w-40 xl:w-48 border-t sm:border-t-[1.5px] lg:border-t-2 border-spacing-x-56 border-black my-6 sm:my-7 md:my-8 lg:my-9 xl:my-10 opacity-75"></div>
+        <div className="mx-16 md:mx-32 text-center text-reg">
+          <h3 className="relative opacity-75 inline">
+            <span className="text-red">Frontend engineer </span>
+            that builds web applications with&nbsp;
           </h3>
-          <div className="bg-black text-3xl rounded-md h-10 w-40 ml-4 translate-y-[-20%] inline-flex justify-center items-center overflow-hidden">
-            <div className="font-bold text-blue before:animate-textswap relative before:absolute flex justify-center items-center"></div>
+          <div className="bg-black rounded-md h-[1.6rem] w-20 md:h-8 lg:h-9 xl:h-10 md:w-24 lg:w-32 xl:w-40 translate-y-[-25%] inline-flex justify-center items-center overflow-hidden">
+            <div className="font-bold text-blue text-alt before:animate-textswap relative before:absolute flex justify-center items-center"></div>
           </div>
         </div>
       </div>
