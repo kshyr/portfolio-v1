@@ -1,9 +1,9 @@
 import { Link } from "react-scroll";
-
+import Image from "next/image";
 export default function Navbar({ setCursorColor, setCursotBorderColor }) {
   return (
     <aside
-      className="fixed h-screen bg-black text-l-wheat text-base md:text-xl lg:text-2xl xl:text-3xl top-0 flex flex-col justify-center items-center space-y-8 w-24 sm:w-32 md:w-44 lg:w-60 xl:w-80 [&>*]:navbar-links"
+      className="fixed h-screen bg-black w-24 sm:w-32 md:w-44 lg:w-60 xl:w-80"
       onMouseEnter={() => {
         setCursorColor("36, 35, 49");
         setCursotBorderColor("245, 239, 224");
@@ -13,15 +13,39 @@ export default function Navbar({ setCursorColor, setCursotBorderColor }) {
         setCursotBorderColor("36, 35, 49");
       }}
     >
-      <div>
-        <Link activeClass="active" smooth spy to="home">
-          Home
-        </Link>
+      <div className="h-full w-full [&>*]:navbar-links text-l-wheat text-base md:text-xl lg:text-2xl xl:text-3xl top-0 flex flex-col justify-center items-center space-y-8">
+        <div>
+          <Link activeClass="active" smooth spy to="home">
+            Home
+          </Link>
+        </div>
+        <div>
+          <Link activeClass="active" smooth spy to="projects">
+            Projects
+          </Link>
+        </div>
       </div>
-      <div>
-        <Link activeClass="active" smooth spy to="projects">
-          Projects
-        </Link>
+      <div className="absolute bottom-8 w-full flex flex-col md:flex-row items-center justify-center [&>*]:navbar-logo gap-6">
+        <div>
+          <a href="https://github.com/deko95">
+            <Image
+              src="/github.svg"
+              layout="fill"
+              objectFit="cover"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/kostiantyn-shyrolapov/">
+            <Image
+              src="/linkedin.svg"
+              layout="fill"
+              objectFit="cover"
+              alt="logo"
+            />
+          </a>
+        </div>
       </div>
     </aside>
   );

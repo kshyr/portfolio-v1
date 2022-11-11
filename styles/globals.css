@@ -32,6 +32,9 @@
   .project-description {
     @apply text-sm md:text-base lg:text-lg xl:text-xl tracking-tight;
   }
+  .navbar-logo {
+    @apply navbar-links relative w-8 h-8 sm:w-10 sm:h-10 xl:w-12 xl:h-12;
+  }
   .emgrad {
     @apply bg-gradient-to-r from-[#FFB800] to-[#FF8C00];
     background-clip: text;
