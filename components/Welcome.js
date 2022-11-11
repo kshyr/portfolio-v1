@@ -8,9 +8,10 @@ export default function Welcome() {
           My name is
         </span>
         <div className="inline-block relative lg:h-12 xl:h-14 shine-wrapper">
-          <span className=" bg-gradient-to-r from-blue to-[#2b5665] text-transparent bg-clip-text text-name font-semibold">
+          <span className="bg-gradient-to-r from-blue to-[#2b5665] text-transparent bg-clip-text text-name font-semibold">
             Kostiantyn&nbsp;
           </span>
+          <br className="sm:hidden"></br>
           <span className="bg-gradient-to-r from-[#b29d36] to-red text-transparent bg-clip-text text-name font-semibold hover:rotate-12">
             Shyrolapov
           </span>
