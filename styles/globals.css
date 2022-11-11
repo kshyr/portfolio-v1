@@ -59,6 +59,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Source Code Pro", monospace;
+  min-height: 100vh;
+  min-height: --webkit-fill-available;
 }
 
 *::-webkit-scrollbar {
