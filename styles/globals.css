@@ -7,8 +7,12 @@
     @apply h-screen bg-l-wheat ml-24 sm:ml-32 md:ml-44 lg:ml-60 xl:ml-80;
   }
   .project-block {
-    @apply bg-black h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-80 lg:w-60 xl:h-[350px]
+    @apply bg-black h-52 w-40 rounded-lg md:h-64 md:w-48 lg:h-[340px] lg:w-60 xl:h-[360px]
     xl:w-[270px] transform duration-150 hover:scale-110;
+  }
+  .project-img {
+    @apply rounded-lg h-28 w-40 md:h-32 md:w-48 lg:h-40 lg:w-60 xl:h-[180px]
+    xl:w-[270px];
   }
   .navbar-links {
     @apply transform duration-150 hover:scale-[1.15];
@@ -21,6 +25,9 @@
   }
   .text-name {
     @apply text-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight;
+  }
+  .text-description {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl tracking-tight;
   }
   .emgrad {
     @apply bg-gradient-to-r from-[#FFB800] to-[#FF8C00];
@@ -48,7 +55,7 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProjectBlock({
   title,
   description,
@@ -20,9 +22,19 @@ export default function ProjectBlock({
     >
       <h1 className="text-l-wheat text-lg text-center mt-1">{title}</h1>
       <a href={link}>
-        <img src={image} alt="project" className="rounded-lg" />
+        <div className="relative project-img">
+          <Image
+            src={image}
+            layout="fill"
+            objectFit="cover"
+            alt="project"
+            className="rounded-lg"
+          />
+        </div>
       </a>
-      <h4 className="text-l-wheat text-center mt-4 ml-2 mr-2">{description}</h4>
+      <h4 className="text-l-wheat text-description text-center mt-4 ml-2 mr-2 line-clamp-2 md:line-clamp-3 lg:line-clamp-4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
+        {description}
+      </h4>
     </div>
   );
 }
