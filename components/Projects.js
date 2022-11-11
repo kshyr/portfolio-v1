@@ -26,9 +26,10 @@ export default function Projects({ setCursorColor, setCursotBorderColor }) {
             setCursotBorderColor={setCursotBorderColor}
           />
           <ProjectBlock
-            title="Steam sales"
-            image="/steam_screenshot.png"
-            description="Steam sales tracker that uses Steam API to get the latest deals."
+            title="Digital Garden"
+            image="/digitalgarden_screenshot.png"
+            description="Store your ideas and export their product. Made possible with GraphQL and AWS."
+            link="https://develop.dia4dpi85gb2h.amplifyapp.com/"
             setCursorColor={setCursorColor}
             setCursotBorderColor={setCursotBorderColor}
           />
