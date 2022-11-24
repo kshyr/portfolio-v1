@@ -13,7 +13,7 @@ export default function Navbar({ setCursorColor, setCursotBorderColor }) {
         setCursotBorderColor("36, 35, 49");
       }}
     >
-      <div className="h-full w-full [&>*]:navbar-links text-l-wheat text-base md:text-xl lg:text-2xl xl:text-3xl top-0 flex flex-col justify-center items-center space-y-8">
+      <div className="h-full w-full [&>*]:navbar-links text-l-wheat text-base md:text-xl lg:text-2xl xl:text-3xl top-0 flex flex-col justify-center items-center space-y-8 relative">
         <div>
           <Link activeClass="active" smooth spy to="home">
             Home
@@ -24,7 +24,14 @@ export default function Navbar({ setCursorColor, setCursotBorderColor }) {
             Projects
           </Link>
         </div>
+        <a
+          href="https://github.com/deko95"
+          className="logo top-5"
+        >
+          <Image src="/logo.png" alt="logo" layout="fill" />
+        </a>
       </div>
+
       <div className="absolute bottom-8 w-full flex flex-col md:flex-row items-center justify-center [&>*]:navbar-logo gap-6">
         <div>
           <a href="https://github.com/deko95">
@@ -32,7 +39,7 @@ export default function Navbar({ setCursorColor, setCursotBorderColor }) {
               src="/github.svg"
               layout="fill"
               objectFit="cover"
-              alt="logo"
+              alt="github-logo"
             />
           </a>
         </div>
