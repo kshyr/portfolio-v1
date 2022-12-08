@@ -10,10 +10,10 @@ export default function Projects({ setCursorColor, setCursotBorderColor }) {
 
         <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-evenly gap-3 md:gap-3 lg:gap-8 xl:gap-20">
           <ProjectBlock
-            title="ToDooo"
-            description="My new tab page. Simple todo app that uses local storage to store your tasks."
-            image="/todo_screenshot.png"
-            link="https://broadleaf-careful-responsibility.glitch.me/"
+            title="GitLobby"
+            description="React application created with Next 13 that uses GitHub REST API."
+            image="/gitlobby_screenshot.png"
+            link="https://gitlobby.vercel.app/"
             setCursorColor={setCursorColor}
             setCursotBorderColor={setCursotBorderColor}
           />
