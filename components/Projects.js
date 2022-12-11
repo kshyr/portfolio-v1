@@ -29,7 +29,7 @@ export default function Projects({ setCursorColor, setCursotBorderColor }) {
             title="Digital Garden"
             image="/digitalgarden_screenshot.png"
             description="Store your ideas and export their product. Made possible with GraphQL and AWS."
-            link="https://develop.dia4dpi85gb2h.amplifyapp.com/"
+            link="https://master.dia4dpi85gb2h.amplifyapp.com/"
             setCursorColor={setCursorColor}
             setCursotBorderColor={setCursotBorderColor}
           />
