@@ -16,8 +16,10 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Frontend developer portfolio" />
+        <title>Kostiantyn Shyrolapov</title>
+        <meta property="og:title" content="Kostiantyn Shyrolapov | Front-end Web Developer" />
+        <meta property="og:description" content="Aiming to make web better!" />
+        <meta property="og:image" content="https://www.kshyr.dev/_next/image?url=%2Flogo.png&w=3840&q=75" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AnimatedCursor
