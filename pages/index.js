@@ -17,9 +17,15 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Kostiantyn Shyrolapov</title>
-        <meta property="og:title" content="Kostiantyn Shyrolapov | Front-end Web Developer" />
+        <meta
+          property="og:title"
+          content="Kostiantyn Shyrolapov | Front-end Web Developer"
+        />
         <meta property="og:description" content="Aiming to make web better!" />
-        <meta property="og:image" content="https://www.kshyr.dev/_next/image?url=%2Flogo.png&w=3840&q=75" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/dgRX0wf/kshyr.png"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AnimatedCursor
@@ -42,8 +48,10 @@ export default function Home() {
       />
       <main>
         <Welcome />
-        <Projects setCursorColor={setCursorColor}
-        setCursotBorderColor={setCursotBorderColor}/>
+        <Projects
+          setCursorColor={setCursorColor}
+          setCursotBorderColor={setCursotBorderColor}
+        />
       </main>
     </div>
   );
